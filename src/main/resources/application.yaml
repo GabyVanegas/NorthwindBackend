@@ -1,0 +1,15 @@
+ktor:
+    application:
+        modules:
+            - com.example.ApplicationKt.module
+    deployment:
+        port: 8080
+    database:
+        jdbcUrl: "jdbc:postgresql://localhost:5432/Northwind"
+        driver: "org.postgresql.Driver"
+        user: "postgres"
+        password: "root"
+        maximumPoolSize: 10
+
+    cors:
+        anyHost: true
