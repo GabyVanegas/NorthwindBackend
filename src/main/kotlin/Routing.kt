@@ -225,6 +225,6 @@ data class OrderDto(
 data class OrderPostDto(
     val orderId: Int,
     val customerId: String,
-    val orderDate: String?,      // formato ISO 8601
+    val orderDate: String?,
     val shippedDate: String?
 )
